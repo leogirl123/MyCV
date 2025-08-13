@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jensie Selvakumar — CV</title>
+  <meta name="description" content="Personal CV webpage for Jensie Selvakumar: skills, experience, education, and contact details." />
+  <style>
+    :root {
+      --bg: #0f172a;         /* slate-900 */
+      --panel: #111827;      /* gray-900 */
+      --muted: #94a3b8;      /* slate-400 */
+      --text: #e5e7eb;       /* gray-200 */
+      --accent: #60a5fa;     /* blue-400 */
+      --chip: #1f2937;       /* gray-800 */
+      --border: #1f2937;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 10% -10%, #0b1222 0%, var(--bg) 35%) fixed;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover, a:focus { text-decoration: underline; }
+
+    .wrapper { max-width: 1000px; margin: 0 auto; padding: 32px 16px 64px; }
+
+    header {
+      display: grid; grid-template-columns: 1fr; gap: 12px; align-items: center;
+      background: linear-gradient(180deg, rgba(96,165,250,0.06), rgba(96,165,250,0));
+      padding: 24px; border: 1px solid var(--border); border-radius: 20px; backdrop-filter: blur(4px);
+    }
+    .title { margin: 0 0 6px; font-size: clamp(22px, 2.8vw, 34px); font-weight: 700; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+
+    nav { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; }
+    nav a { padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; background: var(--chip); font-size: 14px; }
+
+    section { margin-top: 28px; background: rgba(17,24,39,0.7); border: 1px solid var(--border); border-radius: 18px; padding: 20px; }
+    section h2 { margin: 0 0 12px; font-size: clamp(18px, 2.2vw, 22px); letter-spacing: .2px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
+
+    .contact {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;
+      font-size: 14px; color: var(--muted);
+    }
+    .contact div { background: var(--chip); border: 1px solid var(--border); padding: 10px 12px; border-radius: 12px; }
+    .contact strong { color: var(--text); font-weight: 600; }
+
+    .chips { display:flex; flex-wrap: wrap; gap: 8px; }
+    .chip { padding: 6px 10px; background: var(--chip); border: 1px solid var(--border); border-radius: 999px; font-size: 14px; }
+
+    .item { border: 1px solid var(--border); border-radius: 14px; padding: 14px; background: rgba(2,6,23,0.6); }
+    .item h3 { margin: 0; font-size: 17px; }
+    .item .meta { color: var(--muted); font-size: 13px; margin: 2px 0 10px; }
+    .item ul { margin: 0; padding-left: 20px; }
+
+    footer { margin-top: 24px; color: var(--muted); font-size: 13px; text-align: center; }
+
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    @media (max-width: 700px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    /* Print-friendly tweaks */
+    @media print {
+      body { background: #fff; color: #000; }
+      header, section { break-inside: avoid; }
+      a { color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only">Skip to content</a>
+  <div class="wrapper">
+    <header>
+      <div>
+        <h1 class="title">Jensie Selvakumar</h1>
+        <p class="subtitle">Aspiring Software Engineer/Developer · Based in London, United Kingdom</p>
+        <nav aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#articles">Projects & Articles</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>
+          I’m a Software Engineering Bootcamp student with a passion for building clean, accessible user interfaces and learning modern web technologies.
+        </p>
+        <p>
+          I’ve worked on small projects using HTML, CSS, and JavaScript, as well as Python and Django, focusing on responsive layouts and good UX. I enjoy translating ideas into simple, fast pages.
+        </p>
+        <p>
+          My goals: deepen my front‑end skills, contribute to open‑source, and build helpful tools that make people’s lives easier.
+        </p>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact">
+          <div><strong>Name:</strong> Jensie Selvakumar</div>
+          <div><strong>Phone:</strong> Available on request</div>
+          <div><strong>Email:</stronge> Available on request</div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/leogirl123" target="_blank" rel="noopener">github.com/leogirl123</a></div>
+          <div><strong>Location:</strong> London, United Kingdom</div>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills & Competencies</h2>
+        <div class="chips">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3 / Flexbox / Grid</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">JavaScript (Basics)</span>
+          <span class="chip">Accessibility (a11y)</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Python</span>
+          <span class="chip">Django</span>
+          <span class="chip">Problem Solving</span>
+          <span class="chip">Communication</span>
+        </div>
+      </section>
+
+      <section id="experience" aria-labelledby="exp-title">
+        <h2 id="exp-title">Work Experience</h2>
+        <div class="grid-2">
+          <article class="item">
+            <h3>Front‑End Trainee <span class="meta">· Jan 2025 – Present</span></h3>
+            <div class="meta">Self‑directed learning and small freelance projects</div>
+            <ul>
+              <li>Built static sites with semantic HTML and modern CSS layouts.</li>
+              <li>Practiced version control with Git and deployed to GitHub Pages.</li>
+              <li>Focused on readability, color contrast, and responsive design.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <h3>Flight Attendant <span class="meta">· 2020 – 2021</span></h3>
+            <div class="meta">Ryanair</div>
+            <ul>
+              <li>Communicated effectively with customers and solved problems under time pressure.</li>
+              <li>Documented common issues and created short guides to help teammates and passengers.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" aria-labelledby="edu-title">
+        <h2 id="edu-title">Education</h2>
+        <div class="grid-2">
+          <article class="item">
+            <h3>Software Engineering Bootcamp <span class="meta">· 2024 – 2025</span></h3>
+            <div class="meta">HyperionDev</div>
+            <ul>
+              <li>Key modules: Web Fundamentals, UI Design Basics, Python, Django.</li>
+              <li>Projects: personal website, responsive landing page, Django projects.</li>
+            </ul>
+          </article>
+          <article class="item">
+            <h3>Earlier Study <span class="meta">· 2010 – 2015</span></h3>
+            <div class="meta">Kingsford Community School</div>
+            <ul>
+              <li>GCSEs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="articles" aria-labelledby="articles-title">
+        <h2 id="articles-title">Projects & Articles</h2>
+        <div class="item">
+          <ul>
+            <li><a href="https://leogirl123.github.io/gaming-site/" target="_blank" rel="noopener">Gaming hobby website</a> — static site built with HTML & CSS, deployed to GitHub Pages.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Jensie Selvakumar — Open to entry‑level Software / Front‑End roles and internships.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
